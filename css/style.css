@@ -428,7 +428,7 @@ section {
     }
     .navbar {
         position: absolute;
-        top: 100%;
+        top: -800px;
         left: 0;
         right: 0;
         display: flex;
@@ -447,6 +447,22 @@ section {
     }
     .navbar a:hover {
         color: var(--bg-color);
+    }
+    .navbar.active {
+        top: 100%;
+    }
+}
+@media (max-width: 640px) {
+    :root {
+        --big-font: 3rem;
+        --h2-font: 1.5rem;
+        --p-font: 1rem;
+    }
+    .home-text h1 {
+        line-height: 1.1;
+    }
+    .home {
+        height: 95vh;
     }
 }
 
