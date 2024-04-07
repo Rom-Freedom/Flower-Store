@@ -247,3 +247,67 @@ section {
 .row:hover .bbtn a {
     opacity: 1;
 }
+
+/* blog-content */
+.blog-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    align-items: center;
+    gap: 2.5rem;
+    margin-top: 4.5rem;
+}
+
+.box-img {
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+.box-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s;
+    cursor: pointer;
+}
+.box-img:hover img {
+    transform: scale(1.1);
+}
+
+.in-bxx {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.in-text p {
+    color: var(--other-color);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.in-icon i {
+    vertical-align: middle;
+    color: var(--other-color);
+    font-size: 25px;
+    margin-right: 8px;
+}
+.in-icon a {
+    color: var(--other-color);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.main-box h3 {
+    color: var(--text-color);
+    font-size: var(--p-font);
+    font-weight: 500;
+    line-height: 30px;
+    transition: all .5s ease;
+    cursor: pointer;
+}
+.main-box h3:hover {
+    color: var(--main-color);
+}
+
+
